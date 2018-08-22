@@ -9,9 +9,9 @@ public class TestConfig {
     /**
      * 数据库链接配置
      */
-    public static String DB_IP = "10.106.14.176";
+    public static String DB_IP = "localhost";
     public static String DB_PORT = "3306";
-    public static String DB_BASE_NAME = "wconcept_api_test";
+    public static String DB_BASE_NAME = "basename";
     public static String DB_USERNAME = "root";
     public static String DB_PASSWORD = "root";
 
@@ -28,8 +28,8 @@ public class TestConfig {
      */
     public static Map<String,String> map = new HashMap<String,String>();
     public static void setMap(Map map) {
-        map.put("KoreaDirectId","451748");        //韩国直邮商品id
-        map.put("KoreaDirectSimpleId","451741");       //韩国直邮商品simple_id
+        map.put("key1","value1");        //韩国直邮商品id
+        map.put("key2","value2");       //韩国直邮商品simple_id
 
     }
 }
