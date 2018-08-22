@@ -167,12 +167,7 @@ public class TestCase {
             while (m.find()){
                 //去全局变量map里查
                 String newStr = m.group().replace("${","").replace("}","");
-                string = string.replace(m.group(),newStr);
-            }
-            Iterator<Map.Entry<String, String>> it = TestConfig.map.entrySet().iterator();
-            while (it.hasNext()){
-                Map.Entry<String, String> entry = it.next();
-                string = string.replace(entry.getKey(),entry.getValue());
+                string = string.replace(m.group(),TestConfig.map.get(newStr));
             }
             return string;
         }else {
