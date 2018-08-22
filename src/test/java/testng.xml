@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suite">
+    <test name="test">
+        <parameter  name="valueName" value="select * from new_model"/>
+        <classes>
+            <class name="com.course.TestCase"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
